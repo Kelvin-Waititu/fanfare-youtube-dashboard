@@ -1,36 +1,187 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+````md
+# Liverpool Fan Intelligence Dashboard
 
-## Getting Started
+An interactive YouTube analytics dashboard built using the YouTube Data API v3 to help marketing and social media teams better understand Liverpool FC fan engagement, sentiment, and content performance.
 
-First, run the development server:
+---
+
+# Live Demo
+
+Add deployed Vercel link here after deployment.
+
+---
+
+# Features
+
+- Real-time Liverpool FC YouTube video analytics
+- Dynamic video loading (5, 10, 15, or 20 videos)
+- Comment sentiment analysis
+- Engagement rate calculation
+- Interactive charts and visualizations
+- Video-level marketing recommendations
+- Sort videos by:
+  - Engagement
+  - Views
+  - Likes
+  - Comments
+- Comment filtering:
+  - Positive
+  - Neutral
+  - Negative
+- Direct links to YouTube videos
+- Responsive modern dashboard UI
+
+---
+
+# Tech Stack
+
+- Next.js 16
+- TypeScript
+- Tailwind CSS
+- YouTube Data API v3
+
+---
+
+# Product Thinking
+
+This dashboard was designed specifically for sports marketing and social media teams trying to understand:
+
+- Which content formats drive the strongest engagement
+- What emotional signals appear in fan discussions
+- Which videos generate the most conversation
+- What types of content should be amplified or replicated
+
+The recommendation engine uses engagement signals, sentiment analysis, comment themes, and content heuristics to generate actionable marketing insights.
+
+---
+
+# How Sentiment Analysis Works
+
+The application performs lightweight sentiment analysis using:
+
+- Positive/negative keyword scoring
+- Emoji detection
+- Emotional language detection
+- Comment aggregation heuristics
+
+This avoids requiring external paid NLP APIs while still surfacing useful fan sentiment trends.
+
+---
+
+# Architecture
+
+## Frontend
+- Next.js App Router
+- Interactive dashboard UI
+- Dynamic filtering and sorting
+- Custom visualizations
+
+## Backend
+- Secure server-side API route
+- Protected YouTube API key
+- YouTube Data API integration
+- Comment enrichment pipeline
+
+---
+
+# Running Locally
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/Kelvin-Waititu/fanfare-youtube-dashboard.git
+cd fanfare-youtube-dashboard
+````
+
+## 2. Install dependencies
+
+```bash
+npm install
+```
+
+## 3. Create environment variables
+
+Create:
+
+```bash
+.env.local
+```
+
+Add:
+
+```bash
+YOUTUBE_API_KEY=your_youtube_api_key
+```
+
+## 4. Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is designed for deployment on Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Required environment variable:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+YOUTUBE_API_KEY
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Testing Instructions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Open the dashboard
+2. Use the dropdown to choose the number of videos to analyze
+3. Sort videos using the sorting controls
+4. Click any video card to inspect comments and sentiment
+5. Use sentiment filters to isolate positive, neutral, or negative comments
+6. Review generated marketing recommendations
+7. Inspect charts for engagement and audience trends
+
+---
+
+# YouTube API Quota Considerations
+
+The application was intentionally designed to minimize API quota usage.
+
+Optimizations include:
+
+* Fetching videos from a known channel ID
+* Avoiding expensive broad search queries
+* Lightweight heuristic-based sentiment analysis instead of external APIs
+
+---
+
+# Future Improvements / Roadmap
+
+With additional time, I would extend the platform with:
+
+* Trend detection across upload history
+* Topic clustering for fan discussion themes
+* AI-generated campaign suggestions
+* Cross-platform analytics (TikTok, Instagram, X)
+* Historical engagement tracking
+* Exportable reports for social teams
+* Real NLP classification using transformer models
+* Time-series engagement visualizations
+
+---
+
+# Author
+
+Kelvin Waititu
+Stanford University
+
+```
+```
