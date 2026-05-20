@@ -181,7 +181,6 @@ With additional time, I would extend the platform with:
 # Author
 
 Kelvin Waititu
-Stanford University
 
 ```
 ```
