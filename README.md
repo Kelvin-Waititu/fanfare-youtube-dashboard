@@ -7,7 +7,7 @@ An interactive YouTube analytics dashboard built using the YouTube Data API v3 t
 
 # Live Demo
 
-Add deployed Vercel link here after deployment.
+https://fanfare-youtube-dashboard.vercel.app/
 
 ---
 
@@ -71,12 +71,14 @@ This avoids requiring external paid NLP APIs while still surfacing useful fan se
 # Architecture
 
 ## Frontend
+
 - Next.js App Router
 - Interactive dashboard UI
 - Dynamic filtering and sorting
 - Custom visualizations
 
 ## Backend
+
 - Secure server-side API route
 - Protected YouTube API key
 - YouTube Data API integration
@@ -91,6 +93,7 @@ This avoids requiring external paid NLP APIs while still surfacing useful fan se
 ```bash
 git clone https://github.com/Kelvin-Waititu/fanfare-youtube-dashboard.git
 cd fanfare-youtube-dashboard
+```
 ````
 
 ## 2. Install dependencies
@@ -157,9 +160,9 @@ The application was intentionally designed to minimize API quota usage.
 
 Optimizations include:
 
-* Fetching videos from a known channel ID
-* Avoiding expensive broad search queries
-* Lightweight heuristic-based sentiment analysis instead of external APIs
+- Fetching videos from a known channel ID
+- Avoiding expensive broad search queries
+- Lightweight heuristic-based sentiment analysis instead of external APIs
 
 ---
 
@@ -167,14 +170,14 @@ Optimizations include:
 
 With additional time, I would extend the platform with:
 
-* Trend detection across upload history
-* Topic clustering for fan discussion themes
-* AI-generated campaign suggestions
-* Cross-platform analytics (TikTok, Instagram, X)
-* Historical engagement tracking
-* Exportable reports for social teams
-* Real NLP classification using transformer models
-* Time-series engagement visualizations
+- Trend detection across upload history
+- Topic clustering for fan discussion themes
+- AI-generated campaign suggestions
+- Cross-platform analytics (TikTok, Instagram, X)
+- Historical engagement tracking
+- Exportable reports for social teams
+- Real NLP classification using transformer models
+- Time-series engagement visualizations
 
 ---
 
@@ -183,4 +186,5 @@ With additional time, I would extend the platform with:
 Kelvin Waititu
 
 ```
+
 ```
